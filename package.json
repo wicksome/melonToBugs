@@ -1,0 +1,19 @@
+{
+  "name": "melon-to-bugs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yeongjun.kim",
+  "license": "ISC",
+  "dependencies": {
+    "casperjs": "^1.1.4",
+    "cheerio": "^0.22.0",
+    "cli-progress": "^1.4.1",
+    "fs": "0.0.1-security",
+    "promise": "^7.1.1",
+    "request": "^2.81.0"
+  }
+}
