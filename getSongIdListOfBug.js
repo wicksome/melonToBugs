@@ -26,7 +26,7 @@ function loadPlayList() {
 function getSongIdFromBugs(song) {
     return new Promise((resolve, reject) => {
         var keyword = encodeURI(song.name + " " + song.artist);
-        var url = QUERY_URL_SUB + keyword;
+        var url = QUERY_URL + keyword;
 
         request(url, (err, res, body) => {
             if (err) throw err;
@@ -127,8 +127,8 @@ function main() {
             });
         }
 
-        const myAlbumId = 240758864;
-        const splitCount = 100; // max 300
+        const myAlbumId = 240761908;
+        const splitCount = 300; // max 300
 
         console.log(">> 웹브라우저 켜고 벅스 로그인한 뒤 url 입력.");
         for (let index = 0; index < Math.ceil(ids.length / splitCount); index++) {

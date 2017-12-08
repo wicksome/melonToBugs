@@ -15,7 +15,7 @@ var playList = {
     "playListName": $('#plylstTitle').val(),
     "songs": $('.d_added').map(function() {
       return {
-        "song": $(this).find(".songname12").text(),
+        "name": $(this).find(".songname12").text(),
         "artist": $(this).find(".d_artist .fc_mgray").text()
       }
     }).toArray()
